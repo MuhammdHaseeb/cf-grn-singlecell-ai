@@ -1,0 +1,14 @@
+SampleID,Condition,Tissue,Patient
+CF1_BAL,CF,BAL,CF1
+CF1_Bronchial,CF,Bronchial,CF1
+CF1_Tracheal,CF,Tracheal,CF1
+CF2_BAL,CF,BAL,CF2
+CF2_Bronchial,CF,Bronchial,CF2
+CF2_Tracheal,CF,Tracheal,CF2
+CO1_BAL,Control,BAL,CO1
+CO1_Bronchial,Control,Bronchial,CO1
+CO1_Tracheal,Control,Tracheal,CO1
+CO2_BAL,Control,BAL,CO2
+CO2_Bronchial,Control,Bronchial,CO2
+CO2_Tracheal,Control,Tracheal,CO2
+CO3_BAL,Control,BAL,CO3
