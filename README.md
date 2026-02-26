@@ -38,8 +38,8 @@ Provide a reproducible computational pipeline for GRN inference
 
 | Sample Type | Number of Samples | Tissue |
 |-------------|-----------------|--------|
-| CF Patients | 6 | BAL, Bronchial, Tracheal |
-| Healthy Controls | 7 | BAL, Bronchial, Tracheal |
+| CF Patients | 3 | BAL, Bronchial, Tracheal |
+| Healthy Controls | 4 | BAL, Bronchial, Tracheal |
 
 # Methodology Pipeline
 
