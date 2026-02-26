@@ -106,57 +106,7 @@ Performed single-cell RNA-seq preprocessing using **Seurat**:
 
 ---
 
-## 📁 Folder Structure
-
-CF_Airway_Project/
-│
-├── raw_data/
-│   │
-│   ├── CF1_BAL/
-│   │   ├── barcodes.tsv.gz
-│   │   ├── features.tsv.gz
-│   │   └── matrix.mtx.gz
-│   │
-│   ├── CF1_Bronchial/
-│   ├── CF1_Tracheal/
-│   │
-│   ├── CF2_BAL/
-│   ├── CF2_Bronchial/
-│   ├── CF2_Tracheal/
-│   │
-│   ├── CO1_BAL/
-│   ├── CO1_Bronchial/
-│   ├── CO1_Tracheal/
-│   │
-│   ├── CO2_BAL/
-│   ├── CO2_Bronchial/
-│   ├── CO2_Tracheal/
-│   │
-│   └── CO3_BAL/
-│
-├── scripts/
-│   │
-│   ├── 01_load_and_merge.R        # Load raw data, create Seurat objects, merge, initial QC
-│   ├── 02_qc_normalization.R      # QC filtering, normalization, mitochondrial percentage
-│   ├── 03_dimensionality.R        # PCA, scaling, clustering, UMAP
-│   ├── 04_DE_analysis.R           # Differential expression (CF vs Control)
-│   ├── 05_grn_inference.R         # GENIE3 network inference
-│   └── 06_network_analysis.R      # Network visualization & hub TF identification
-│
-├── metadata/
-│   └── sample_info.csv
-│
-├── results/
-│   │
-│   ├── figures/
-│   │   ├── UMAPs/
-│   │   ├── ViolinPlots/
-│   │   ├── FeaturePlots/
-│   │   └── GRN_networks/
-│   │
-│   └── tables/
-│       ├── DE_results/
-│       └── GRN_importance_scores/
+<pre> ## 📁 Folder Structure ```text CF_Airway_Project/ │ ├── raw_data/ │ ├── CF1_BAL/ │ │ ├── barcodes.tsv.gz │ │ ├── features.tsv.gz │ │ └── matrix.mtx.gz │ │ │ ├── CF1_Bronchial/ │ ├── CF1_Tracheal/ │ │ │ ├── CF2_BAL/ │ ├── CF2_Bronchial/ │ ├── CF2_Tracheal/ │ │ │ ├── CO1_BAL/ │ ├── CO1_Bronchial/ │ ├── CO1_Tracheal/ │ │ │ ├── CO2_BAL/ │ ├── CO2_Bronchial/ │ ├── CO2_Tracheal/ │ │ │ └── CO3_BAL/ │ ├── scripts/ │ ├── 01_load_and_merge.R │ ├── 02_qc_normalization.R │ ├── 03_dimensionality.R │ ├── 04_DE_analysis.R │ ├── 05_grn_inference.R │ └── 06_network_analysis.R │ ├── metadata/ │ └── sample_info.csv │ └── results/ ├── figures/ │ ├── UMAPs/ │ ├── ViolinPlots/ │ ├── FeaturePlots/ │ └── GRN_networks/ │ └── tables/ ├── DE_results/ └── GRN_importance_scores/ ``` </pre>
 
 
 
