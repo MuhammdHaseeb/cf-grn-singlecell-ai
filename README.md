@@ -110,7 +110,7 @@ Performed single-cell RNA-seq preprocessing using **Seurat**:
 
 - CF_Airway_Project/
 - │
-├── raw_data/
+- ├── raw_data/
 - │   │
 - │   ├── CF1_BAL/
 - │   │   ├── barcodes.tsv.gz
@@ -136,6 +136,7 @@ Performed single-cell RNA-seq preprocessing using **Seurat**:
 - │
 - ├── scripts/
 - │   │
+- │   │   00_install_packages.R
 - │   ├── 01_load_and_merge.R        # Load raw data, create Seurat objects, merge, initial QC
 - │   ├── 02_qc_normalization.R      # QC filtering, normalization, mitochondrial percentage
 - │   ├── 03_dimensionality.R        # PCA, scaling, clustering, UMAP
