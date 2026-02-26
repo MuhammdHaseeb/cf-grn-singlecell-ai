@@ -11,24 +11,24 @@ This project develops an AI-driven framework to reconstruct gene regulatory netw
 Using machine learning–based network inference, this study aims to identify key transcriptional regulators driving CF airway pathophysiology.
 
 ---
-Dataset: GSE271984
-Source: NCBI Gene Expression Omnibus (GEO)
-Tissue Focus: Bronchoalveolar lavage (BAL), Bronchial, and Tracheal airway cells
-Disease Context: Cystic Fibrosis (CF)
+- **Dataset:** GSE271984
+- **Source:** NCBI Gene Expression Omnibus (GEO)
+- **Tissue Focus:** Bronchoalveolar lavage (BAL), Bronchial, and Tracheal airway cells
+- **Disease Context:** Cystic Fibrosis (CF)
 
 ---
 
 ## Objectives
 
--Process and integrate single-cell RNA-seq datasets from CF and healthy controls
+- Process and integrate single-cell RNA-seq datasets from CF and healthy controls
 
--Perform dimensionality reduction and clustering of airway epithelial cells
+- Perform dimensionality reduction and clustering of airway epithelial cells
 
--Reconstruct gene regulatory networks using AI-based methods
+- Reconstruct gene regulatory networks using AI-based methods
 
--Identify high-centrality transcription factors driving CF-specific phenotypes
+- Identify high-centrality transcription factors driving CF-specific phenotypes
 
-Provide a reproducible computational pipeline for GRN inference
+- Provide a reproducible computational pipeline for GRN inference
 
 
 
@@ -106,44 +106,57 @@ Performed single-cell RNA-seq preprocessing using **Seurat**:
 
 ---
 
-## Folder structure:
+## 📁 Folder Structure
+
 CF_Airway_Project/
 │
 ├── raw_data/
+│   │
 │   ├── CF1_BAL/
 │   │   ├── barcodes.tsv.gz
 │   │   ├── features.tsv.gz
 │   │   └── matrix.mtx.gz
+│   │
 │   ├── CF1_Bronchial/
 │   ├── CF1_Tracheal/
+│   │
 │   ├── CF2_BAL/
 │   ├── CF2_Bronchial/
 │   ├── CF2_Tracheal/
+│   │
 │   ├── CO1_BAL/
 │   ├── CO1_Bronchial/
 │   ├── CO1_Tracheal/
+│   │
 │   ├── CO2_BAL/
 │   ├── CO2_Bronchial/
 │   ├── CO2_Tracheal/
-│   ├── CO3_BAL/
+│   │
+│   └── CO3_BAL/
+│
 ├── scripts/
-│   ├── 01_load_and_merge.R         # Load raw data, create Seurat objects, merge, initial QC
-│   ├── 02_qc_normalization.R       # QC filtering, normalization, mitochondrial percentage
-│   ├── 03_dimensionality.R         # PCA, variable features, scaling, clustering, UMAP
-│   ├── 04_DE_analysis.R            # Differential expression analysis between CF and control
-│   ├── 05_grn_inference.R          # GENIE3 network inference
-│   ├── 06_network_analysis.R       # Network visualization and hub TF identification
+│   │
+│   ├── 01_load_and_merge.R        # Load raw data, create Seurat objects, merge, initial QC
+│   ├── 02_qc_normalization.R      # QC filtering, normalization, mitochondrial percentage
+│   ├── 03_dimensionality.R        # PCA, scaling, clustering, UMAP
+│   ├── 04_DE_analysis.R           # Differential expression (CF vs Control)
+│   ├── 05_grn_inference.R         # GENIE3 network inference
+│   └── 06_network_analysis.R      # Network visualization & hub TF identification
+│
 ├── metadata/
-     └── sample_info.csv
-results/
-├── figures/
-│   ├── UMAPs/
-│   ├── ViolinPlots/
-│   ├── FeaturePlots/
-│   ├── GRN_networks/
-├── tables/
-    ├── DE_results/
-    ├── GRN_importance_scores/
+│   └── sample_info.csv
+│
+├── results/
+│   │
+│   ├── figures/
+│   │   ├── UMAPs/
+│   │   ├── ViolinPlots/
+│   │   ├── FeaturePlots/
+│   │   └── GRN_networks/
+│   │
+│   └── tables/
+│       ├── DE_results/
+│       └── GRN_importance_scores/
 
 
 
