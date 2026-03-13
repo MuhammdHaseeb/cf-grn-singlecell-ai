@@ -1,6 +1,8 @@
 
 
 # **Reconstructed gene regulatory networks in cystic fibrosis airway epithelium using AI-driven analysis of publicly available single-cell RNA-seq dataset**
+OR
+Cell-Type-Specific Gene Regulatory Network Disruption in Cystic Fibrosis Airway Epithelium: A Machine Learning-Assisted Single-Cell Transcriptomic Analysis
 
 ---
 
